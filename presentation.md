@@ -116,6 +116,4 @@ u(25)=16.99; u(35.35)=23.05
 
 From this it shows that although the probability for both stock exchanges to go up is equal, Mary is more willing to invest in the AEX index. If Mary is Dutch, this is a case of the Home Bias.
 
-- we can also do a figure from the web
-
----------
+-------
