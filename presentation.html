@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Assignment 2">
+  <title>Presentation Numerical Simulation</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/solarized.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title">Presentation Numerical Simulation</h1>
+  <h2 class="author">Assignment 2</h2>
+  <h3 class="date">An assignment of Risk and Time</h3>
+</section>
+<section id="TOC">
+<ul>
+<li><a href="#/introduction">Introduction</a></li>
+<li><a href="#/exercise-1">Exercise 1:</a></li>
+</ul>
+</section>
+
+<section><section id="introduction" class="titleslide slide level1"><h1>Introduction</h1></section></section>
+<section><section id="exercise-1" class="titleslide slide level1"><h1>Exercise 1:</h1></section><section class="slide level2">
+
+<ol type="a">
+<li>It has been found that most people prefer prospect A to B, while they si-multaneously prefer prospect D to prospect C. Show that this choice patternviolates Subjective Expected Utility. since:</li>
+</ol>
+<p><span class="math display">\[
+\sum_{i} B(E_i)uX_i
+\]</span></p>
+<table style="width:10%;">
+<colgroup>
+<col style="width: 9%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">SEU(A) = <span class="math inline">\(\displaystyle\frac{3}{9}\times0+\frac{1}{2}\times\frac{6}{9}\times0+\frac{1}{2}\times\frac{6}{9}\times0=33\frac{1}{3}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SEU(B) = <span class="math inline">\(\displaystyle\frac{3}{9}\times0+\frac{1}{2}\times\frac{6}{9}\times100+\frac{1}{2}\times\frac{6}{9}\times0=33\frac{1}{3}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SEU(C) = <span class="math inline">\(\displaystyle\frac{3}{9}\times100+\frac{1}{2}\times\frac{6}{9}\times0+\frac{1}{2}\times\frac{6}{9}\times100=66\frac{2}{3}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SEU(D) = <span class="math inline">\(\displaystyle\frac{3}{9}\times0+\frac{1}{2}\times\frac{6}{9}\times100+\frac{1}{2}\times\frac{6}{9}\times100=66\frac{2}{3}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Since SEU(A)=SEU(B) and SEU(C)=SEU(D) people should be indifferent between choosing prospect A and B and between choosing prospect C and D.</p>
+<table style="width:11%;">
+<colgroup>
+<col style="width: 11%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">B) Show that the <span class="math inline">\(\alpha\)</span>-MEU model can accommodate the majority choice.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(\alpha\)</span>-MEU( f )=<span class="math inline">\(\alpha\)</span>minp<span class="math inline">\(\epsilon\)</span>C(Ep[u( f )]) + (1-<span class="math inline">\(\alpha\)</span>)maxp<span class="math inline">\(\epsilon\)</span>C(Ep[u( f )])</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\alpha\)</span>= 0.8</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(\alpha\)</span>-MEU(A) = <span class="math inline">\(\frac{1}{3}\times100 = 33\frac{1}{3}\)</span></p>
+<p><span class="math inline">\(\alpha\)</span>-MEU(B) = <span class="math inline">\(\frac{4}{5}\times(0\times100)+(1-\frac{4}{5})\times(\frac{2}{3}\times100) = 13\frac{1}{3}\)</span></p>
+<p><span class="math inline">\(\alpha\)</span>-MEU(C) = <span class="math inline">\(\frac{4}{5}\times(\frac{1}{3}\times100)+(1-\frac{4}{5})\times(1\times100) = 13\frac{1}{3}\)</span></p>
+<p><span class="math inline">\(\alpha\)</span>-MEU(D) = <span class="math inline">\(\frac{2}{3}\times100 = 66\frac{2}{3}\)</span></p>
+<table style="width:11%;">
+<colgroup>
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Thus, since <span class="math inline">\(\alpha\)</span>-MEU(A) <span class="math inline">\(&gt;\)</span> <span class="math inline">\(\alpha\)</span>-MEU(B) and <span class="math inline">\(\alpha\)</span>-MEU(D) <span class="math inline">\(&gt; \alpha\)</span>-MEU(C) the <span class="math inline">\(\alpha\)</span>-MEU model can accommodate the majority choice.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">c) Show that the Recursive Expected Utility model can accommodate the majority choice.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REU( f ) = E<span class="math inline">\(\mu\)</span>[<span class="math inline">\(\phi\)</span>(Ep<span class="math inline">\(\epsilon\)</span>C[u( f )])]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\phi = x^{0.5}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>REU(A) = <span class="math inline">\(\displaystyle(\frac{1}{3}\times100)^{\frac{1}{2}}=5.77\)</span></p>
+<p>REU(B) = <span class="math inline">\(\displaystyle\frac{1}{2}\times(\frac{2}{3}\times100+\frac{1}{3}\times0)^{\frac{1}{2}} + \frac{1}{2}\times(0\times100+\frac{2}{3}\times0+\frac{1}{3}\times0)^{\frac{1}{2}} =4.08\)</span></p>
+<p>REU(C) = <span class="math inline">\(\displaystyle\frac{1}{2}\times(\frac{1}{3}\times100+\frac{2}{3}\times100)^{\frac{1}{2}} + \frac{1}{2}\times(\frac{1}{3}\times100+\frac{2}{3}\times0)^{\frac{1}{2}} =7.88\)</span></p>
+<p>REU(D) = <span class="math inline">\(\displaystyle\frac{1}{2}\times(\frac{2}{3}\times100)^{\frac{1}{2}} + \frac{1}{2}\times(\frac{2}{3}\times100)^{\frac{1}{2}} =8.16\)</span></p>
+<table style="width:11%;">
+<colgroup>
+<col style="width: 11%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Since <span class="math inline">\(REU(A)&gt;REU(B) and REU(D)&gt;REU(C)\)</span> recursive expected utility can accommodate the majority choice.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Exercise 2 ================= When choosing between uncertain alternatives, Mary maximizes cumulative prospect theory with a weighting (source) function for a ball drawn from an urn with a known composition of balls (K) equal to the weighting function for the performance of the Dow Jones index, both given by: <span class="math inline">\(wK(p)=wDOW(p)=p^2\)</span>. The weighting function for balls drawn from an urn with an unknown composition of colored balls (U), as well as the weighting function for the performance of the AEX index are given by <span class="math inline">\(wU(p)=wAEX(p)=\frac{p^{0.5}}{((p^{0.5}+(1-p)^{0.5})^2)}\)</span>. Mary's utility function is <span class="math inline">\(u(x)=x^{0.88}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>a)Show that Mary can be ambiguity seeking for unlikely events and ambiguity averse for events of moderate likelihood when comparing lotteries with prizes depending on balls drawn from either the risky or the unknown urn.</p>
+</section><section class="slide level2">
+
+<ul>
+<li><p>and we have another slide</p></li>
+<li><p>and nested bullets</p></li>
+<li><p>the next slide contains a figure</p></li>
+</ul>
+<table style="width:12%;">
+<colgroup>
+<col style="width: 12%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><img src="images/graph7.png" /></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Yellow: Unkown urn</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Blue: Known but Risky urn</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Green: Line with weighting according to probability</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="a">
+<li>Show that Mary can exhibit the home bias, assuming that she beliefs that the Dow Jones index and the AEX index will go up (and down) with probability 0.5. In this case Mary gains $100 dollar if the AEX or the Dow Jones will go up:</li>
+</ol>
+<p><span class="math inline">\(wK(0.5)=0.25; wU(0.5)=0.3535\)</span></p>
+<p><span class="math inline">\(wK(0.5)\times100=25; wU(0.5)\times100=35.35\)</span></p>
+<p>u(25)=16.99; u(35.35)=23.05</p>
+<p>From this it shows that although the probability for both stock exchanges to go up is equal, Mary is more willing to invest in the AEX index. If Mary is Dutch, this is a case of the Home Bias.</p>
+<ul>
+<li>we can also do a figure from the web</li>
+</ul>
+</section><section class="slide level2">
+
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
